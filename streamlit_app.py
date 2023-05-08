@@ -1,5 +1,3 @@
-pip install nltk -q
-
 import os
 import streamlit as st
 import requests
