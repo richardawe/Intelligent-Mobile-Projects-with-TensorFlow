@@ -13,6 +13,8 @@ from langchain.chains.question_answering import load_qa_chain
 from langchain.document_loaders import TextLoader
 from langchain.llms import OpenAI
 
+os.environ["OPENAI_API_KEY"] = "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"
+
 nltk.download('punkt')
 st.title('Document QA')
 
