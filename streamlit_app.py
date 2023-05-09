@@ -16,7 +16,10 @@ from langchain.llms import OpenAI
 
 nltk.download('punkt')
 st.title('Document QA')
-st.write("OPENAI_API_KEY:", st.secrets["openai_API_KEY"])
+st.write(
+    os.environ["OPENAI_API_KEY"] == st.secrets["openai_API_KEY"],
+)
+
 # Prompt the user to enter a URL
 url = st.text_input('Enter the URL of a text document:')
 
