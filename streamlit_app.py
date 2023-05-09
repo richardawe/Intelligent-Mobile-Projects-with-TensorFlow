@@ -12,12 +12,11 @@ from langchain.chains.question_answering import load_qa_chain
 from langchain.document_loaders import TextLoader
 from langchain.llms import OpenAI
 
-st.write("OPENAI_API_KEY:", st.secrets["openai_API_KEY"])
 
 
 nltk.download('punkt')
 st.title('Document QA')
-
+st.write("OPENAI_API_KEY:", st.secrets["openai_API_KEY"])
 # Prompt the user to enter a URL
 url = st.text_input('Enter the URL of a text document:')
 
